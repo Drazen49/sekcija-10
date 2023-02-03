@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Forme!!!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="drugaforma.html">
+</head>
+<body>
+    <form action="/" method="GET" >
+        <h2>Detalji o vama</h2>
+        <label for="username">Vase ime</label>
+        <input type="text" name="user-name" id="username" required placeholder="Username"/>
+
+        <label for="usermessage">Your message</label>
+        <textarea id="usermessage" name="user-message" placeholder="Your message" rows="6"></textarea>
+        <label for="omiljena-boja">Omiljena boja?</label>
+        <select id="omiljena-boja" name="boja">
+            <option value="blue">Plava</option>
+            <option value="red">Crvena</option>
+            <option value="green">Zelena</option>
+        </select>
+
+        <label for="useremail">Your email</label>
+        <input type="email" name="user-email" id="useremail" placeholder="Your Email"/>
+        <label for="userage">Your age</label>
+        <input type="number" step="0.1" name="user-age" id="userage" placeholder="Your Age"/>
+        <hr>
+        <h2>How can we verify your account?</h2>
+        <div class="form-control-inline">
+            <input type="radio" name="verify" id="sms" value="message" required />
+            <label for="sms">Send a message(sms)</label>
+        </div>
+        <div class="form-control-inline">
+            <input type="radio" name="verify" id="via-call" value="phone" required>
+            <label for="via-call">Via call</label>
+        </div>
+        <div class="form-control-inline">
+        <input type="radio" name="verify" id="email" value="email" required/>
+        <label for="email">Send email</label>
+        </div>
+        <button type="submit">Save</button>
+        <a href="drugaforma.html">Druga forma</a>
+        
+        
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Contact us</h1>
+    </header>
+    <main>
+        
+        <form action="" method="GET">
+            <section>
+                <h2>Kako vam mozemo pomoci?</h2>
+                <ul>
+                    <li>
+                        <label for="username">Vase ime</label>
+                        <input type="text" id="username" name="username" required>
+                    </li>
+                    <li>
+                        <label for="email">Vas email</label>
+                        <input type="email" id="email" name="email" required>
+                    </li>
+                    <li>
+                        <label for="number">Vas email</label>
+                        <input type="tel" id="number" name="number" required minlength="5">
+                    </li>
+                    <li>
+                        <label for="message">Vasa poruka</label>
+                        <textarea name="message" id="message" required minlength="10" maxlength="700" rows="6"></textarea>
+                    </li>
+                </ul>
+
+            </section>
+            <section>
+                <label for="finding">Kako ste nas nasli?</label>
+                <select name="finding" id="finding" required>
+                    <option value="search">Web pretraga</option>
+                    <option value="mouth">Culi od nekoga</option>
+                    <option value="other">Ostalo</option>
+                </select>
+            </section>
+            <section>
+                <h2>Kako da vam odgovorimo?</h2>
+                <ul>
+                    <li class="inline-control">
+                        <input type="radio" id="reply-phone" name="reply" value="phone" required>
+                        <label for="reply-phone">Poziv</label>
+                    </li>
+                    <li class="inline-control">
+                        <input type="radio" id="reply-email" name="reply" value="email" required>
+                        <label for="reply-email">Email</label>
+                    </li>
+                    <li class="inline-control">
+                        <input type="radio" id="reply-none" name="reply" value="none" required>
+                        <label for="reply-none">Ne odgovaraj.</label>
+                    </li>
+                </ul>
+            </section>
+            <section class="inline-control">
+                <input type="checkbox" id="prihvati" required>
+                <label for="prihvati">Prihvati pravila o privatnosti</label>
+            </section>
+            <section align="right">
+                <button type="reset" class="btn-empty">Izbrisi</button>
+                <button type="submit" class="btn-filled">Posalji</button>
+            </section>
+        </form>
+    
+    </main>
+    
+</body>
+</html>
